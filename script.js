@@ -11,6 +11,40 @@ function finish() {
   body.classList.remove("locked");
   window.scrollTo(0, 0);
   initReveal();
+  initTyping();
+}
+
+/* ---------- Typing effect in the hero ---------- */
+(function injectTypingStyles() {
+  const st = document.createElement("style");
+  st.textContent = `
+    .typed-line{margin:10px 0 0;min-height:1.4em;font-family:"Sora","DM Sans",system-ui,sans-serif;
+      font-size:clamp(18px,2.6vw,28px);font-weight:600}
+    .typed{color:#5b94f5}
+    .caret{display:inline-block;width:2px;height:1.1em;margin-left:3px;background:#5b94f5;
+      vertical-align:-.15em;animation:caretBlink 1s steps(1) infinite}
+    @keyframes caretBlink{50%{opacity:0}}
+  `;
+  document.head.appendChild(st);
+  const el = document.getElementById("typed");
+  if (el && !reduce) el.textContent = "";   // start empty; initTyping() fills it after the entrance
+})();
+
+function initTyping() {
+  const el = document.getElementById("typed");
+  if (!el || reduce || el.dataset.started) return;
+  el.dataset.started = "1";
+  const words = ["Flutter developer", "IoT builder", "Computer Engineering student", "website developer"];
+  let w = 0, c = 0, del = false;
+  (function tick() {
+    const word = words[w];
+    c += del ? -1 : 1;
+    el.textContent = word.slice(0, c);
+    let delay = del ? 35 : 75;
+    if (!del && c === word.length) { del = true; delay = 1500; }
+    else if (del && c === 0) { del = false; w = (w + 1) % words.length; delay = 350; }
+    setTimeout(tick, delay);
+  })();
 }
 
 /* =====================================================================
