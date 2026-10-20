@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ryan Jhay Silvestre | Software Developer &amp; Computer Engineering Student</title>
+  <meta name="theme-color" content="#081a44">
+  <meta name="description" content="Portfolio of Ryan Jhay Silvestre: Flutter mobile apps, websites with HTML, CSS, JavaScript and Flask, IoT projects, and Firebase and Supabase backends.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LANDING: click Enter to open the portfolio -->
+  <div class="landing" id="landing">
+    <div class="landing__inner">
+      <p class="landing__hello">Welcome to my portfolio</p>
+      <h1 class="landing__name">Ryan Jhay<br>Silvestre</h1>
+      <p class="landing__role">Computer Engineering student and software developer</p>
+      <button class="enter" id="enter" type="button" aria-label="Enter portfolio"><span>Enter</span></button>
+      <p class="landing__hint">Click to see more about me</p>
+    </div>
+  </div>
+  <noscript><style>.landing{display:none}</style></noscript>
+
+  <nav class="nav" aria-label="Main">
+    <a class="nav__brand" href="#home">RJS</a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+    <ul class="nav__links" id="menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#process">How I work</a></li>
+      <li><a class="nav__cta" href="#contact">Contact</a></li>
+    </ul>
+    <div class="progress" id="progress"></div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero__text">
+      <p class="available"><span class="dot" aria-hidden="true"></span> Open to online and in-person work</p>
+      <h1>Hi, I’m Ryan Jhay Silvestre</h1>
+      <p class="subtitle">Computer Engineering student and aspiring software developer. I build mobile apps, websites and IoT systems, and I can help you online or in person.</p>
+      <div class="hero__actions">
+        <a class="btn btn--solid" href="#contact">Contact me</a>
+        <a class="btn" href="#projects">See my projects</a>
+      </div>
+    </div>
+    <div class="photo-frame">
+      <img class="photo" src="images/ryan.jpg" alt="Portrait of Ryan Jhay Silvestre" width="615" height="820">
+      <span class="float float--a" aria-hidden="true">📱 Flutter developer</span>
+      <span class="float float--b" aria-hidden="true">🛠 IoT builder</span>
+      <span class="float float--c" aria-hidden="true">🎓 CpE student</span>
+    </div>
+  </header>
+
+  <div class="marquee-wrap">
+    <div class="marquee" aria-label="Technologies I use">
+      <div class="marquee__inner">
+        <ul class="marquee__list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>Flask</li><li>Flutter</li><li>Firebase</li><li>Supabase</li><li>Arduino</li><li>ESP32</li><li>Raspberry Pi</li><li>GitHub</li><li>Vercel</li><li>Render</li></ul>
+        <ul class="marquee__list" aria-hidden="true"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>Flask</li><li>Flutter</li><li>Firebase</li><li>Supabase</li><li>Arduino</li><li>ESP32</li><li>Raspberry Pi</li><li>GitHub</li><li>Vercel</li><li>Render</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="about" id="about">
+      <h2>I’m very qualified to help.</h2>
+      <div class="about__body">
+        <div><p>I am a fourth-year Bachelor of Science in Computer Engineering student passionate about software development such as developing Mobile App/Web App. I enjoy creating mobile applications, IoT solutions, and practical technologies that solve real-world problems.</p>
+        <p>I am eager to continue learning and contribute to meaningful projects while expanding my technical skills.</p></div>
+        <dl class="facts">
+          <div><dt>Studying</dt><dd>BS Computer Engineering, 4th year</dd></div>
+          <!-- TODO: add your school name, e.g. <dd>BS Computer Engineering, 4th year, Your University</dd> -->
+          <div><dt>Focus</dt><dd>Flutter apps, websites, IoT, cloud backends</dd></div>
+          <div><dt>Work style</dt><dd>Online and in person</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="section-head"><h2>What can I do for you?</h2><p class="lead">From mobile apps to everyday tech help, here is what I can take on.</p></div>
+      <div class="cards">
+        <article class="card"><span class="icon" aria-hidden="true">📱</span><h3>Mobile app development</h3><p>Cross-platform Flutter apps for Android and iOS, from idea to working build.</p></article>
+        <article class="card"><span class="icon" aria-hidden="true">🌐</span><h3>Website development</h3><p>Responsive websites with HTML, CSS and JavaScript, plus Python Flask for the backend.</p></article>
+        <article class="card"><span class="icon" aria-hidden="true">🛠</span><h3>IoT project development</h3><p>Sensor-based systems using Arduino, ESP32 and Raspberry Pi, connected to a mobile app.</p></article>
+        <article class="card"><span class="icon" aria-hidden="true">☁️</span><h3>Backend &amp; deployment</h3><p>Firebase, Supabase and Flask for data and login, hosted on Vercel or Render.</p></article>
+        <article class="card"><span class="icon" aria-hidden="true">💻</span><h3>Technical support &amp; assistance</h3><p>Help with software, setups and everyday tech problems, online or in person.</p></article>
+        <article class="card"><span class="icon" aria-hidden="true">📊</span><h3>Data entry, Excel &amp; documentation</h3><p>Clean spreadsheets, accurate data entry and clear technical write-ups.</p></article>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="section-head"><h2>Technical skills</h2><p class="lead">The tools I use to build, host and ship projects.</p></div>
+      <div class="skill-groups">
+        <div><h3>Web development</h3><ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></div>
+        <div><h3>Mobile apps</h3><ul class="chips"><li>Flutter</li></ul></div>
+        <div><h3>Backend &amp; database</h3><ul class="chips"><li>Python</li><li>Flask</li><li>Firebase</li><li>Supabase</li></ul></div>
+        <div><h3>IoT &amp; hardware</h3><ul class="chips"><li>Arduino</li><li>ESP32</li><li>Raspberry Pi</li></ul></div>
+        <div><h3>Tools &amp; hosting</h3><ul class="chips"><li>VS Code</li><li>Thonny</li><li>GitHub</li><li>Vercel</li><li>Render</li><li>Microsoft Excel</li></ul></div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="section-head"><h2>Featured projects</h2><p class="lead">A few of the apps I have built.</p></div>
+      <div class="projects__grid">
+        <article class="project project--pool">
+          <div class="project__shot"><img src="images/smart-pool.jpg" alt="Smart Pool Monitoring app screen" width="360" height="724" loading="lazy"></div>
+          <h3>Smart Pool Monitoring</h3>
+          <p>An IoT-based mobile application that monitors swimming pool conditions in real time using sensors and provides instant updates through a Flutter app.</p>
+          <ul class="tags"><li>Flutter</li><li>IoT</li><li>Sensors</li></ul>
+        </article>
+        <article class="project project--budget">
+          <div class="project__shot"><img src="images/budget-tracker.jpg" alt="Budget Tracker app screen" width="360" height="724" loading="lazy"></div>
+          <h3>Budget Tracker</h3>
+          <p>A Flutter mobile application that helps users record daily expenses, manage their budget, and monitor spending habits with a simple interface.</p>
+          <ul class="tags"><li>Flutter</li><li>Mobile app</li></ul>
+        </article>
+        <article class="project project--couple">
+          <div class="project__shot"><img src="images/couple-gallery.jpg" alt="Couple Gallery app screen" width="360" height="724" loading="lazy"></div>
+          <h3>Couple Gallery</h3>
+          <p>A private photo gallery application that securely stores and organizes memorable moments with a clean and user-friendly design.</p>
+          <ul class="tags"><li>Mobile app</li><li>Private login</li></ul>
+        </article>
+        <article class="project project--parking">
+          <div class="project__shot"><img src="images/smart-parking.jpg" alt="Smart Parking app screen" width="360" height="724" loading="lazy"></div>
+          <h3>Smart Parking</h3>
+          <p>A smart parking solution that assists users in locating available parking spaces and improves parking management through a mobile application.</p>
+          <ul class="tags"><li>Mobile app</li><li>IoT</li></ul>
+        </article>
+      </div>
+      <!-- TODO: add a GitHub link per project, e.g. <a href="https://github.com/you/repo">View on GitHub</a> -->
+    </section>
+
+    <section class="process" id="process">
+      <div class="section-head"><h2>How I work</h2><p class="lead">Three simple steps from first message to finished work.</p></div>
+      <ol class="steps">
+        <li><h3>Chat</h3><p>You tell me what you need and when. I ask questions until the goal is clear.</p></li>
+        <li><h3>Build</h3><p>I build in small steps and share progress so you can give feedback early.</p></li>
+        <li><h3>Deliver</h3><p>I deploy it, hand over the code on GitHub, and explain how to use it.</p></li>
+      </ol>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="photo-frame photo-frame--small">
+        <img class="photo" src="images/ryan.jpg" alt="Ryan Jhay Silvestre smiling at the camera" width="615" height="820" loading="lazy">
+      </div>
+      <div class="contact__text">
+        <h2>Let’s work together!</h2>
+        <p class="subtitle">Contact me and let’s schedule a chat.</p>
+        <ul class="contact__links">
+          <li><span>Email</span><a href="mailto:silvestreryanjhay@gmail.com?subject=Project%20inquiry%20from%20your%20portfolio&body=Hi%20Ryan%2C%0A%0AI%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20talk%20about%20a%20project.%0A%0AMy%20name%3A%0AWhat%20I%20need%20help%20with%3A%0A%0AThanks%21" data-compose>silvestreryanjhay@gmail.com</a></li>
+          <li><span>Instagram</span><a href="https://instagram.com/silvestreryy" target="_blank" rel="noopener">silvestreryy</a></li>
+          <!-- TODO: replace # with your Facebook profile link -->
+          <li><span>Facebook</span><a href="#" target="_blank" rel="noopener">Ryan Jhay Silvestre</a></li>
+          <!-- TODO: add your GitHub: <li><span>GitHub</span><a href="https://github.com/your-username">your-username</a></li> -->
+        </ul>
+        <a class="btn btn--solid" id="send-email" href="mailto:silvestreryanjhay@gmail.com?subject=Project%20inquiry%20from%20your%20portfolio&body=Hi%20Ryan%2C%0A%0AI%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20talk%20about%20a%20project.%0A%0AMy%20name%3A%0AWhat%20I%20need%20help%20with%3A%0A%0AThanks%21" data-compose>Send an email</a>
+        <p class="mail-alt">Not using Gmail? <a href="mailto:silvestreryanjhay@gmail.com?subject=Project%20inquiry%20from%20your%20portfolio&body=Hi%20Ryan%2C%0A%0AI%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20talk%20about%20a%20project.%0A%0AMy%20name%3A%0AWhat%20I%20need%20help%20with%3A%0A%0AThanks%21">Open your default mail app</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><p>© <span id="year">2026</span> Ryan Jhay Silvestre</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
